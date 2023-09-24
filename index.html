@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__content">
+                <div class="header__content-user">
+                    <img class="header__content-user--logo" src="/assets/User.jpg" alt = 'logo'>
+                    <h3>Даниил</h3>
+                </div>
+                <div class="header__content-logo">
+                    <a class="header__content-logo--link" href="https://leroymerlin.ru/">
+                        <img src="/assets/logo-Leroy-Merlin.jpg" alt = 'logo'>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <section class="new-contact">
+                <form id='add-form'>
+                    <input id=add-form__name type="text" placeholder="Имя">
+                    <input id=add-form__surname type="text" placeholder="Фамилия">
+                    <input id=add-form__age type="number" placeholder="Возраст">
+                    <input id=add-form__email type="email" placeholder="Почта">
+                    <div class="add-form__btn-wrapper">
+                        <button class='add-form__btn' type="submit">Добавить пользователя</button>
+                    </div>
+                </form>
+            </section>
+            <div class="sort__user">
+                <button id="sort__user-name">
+                    Сортировка по имени
+                </button>
+                <button id=sort__user-age>
+                    Сортировка по возрасту
+                </button>
+            </div>
+            <div id="table"></div>
+            <section class="filter-contact">
+                <form id=filter-form>
+                    <div class="filter-form__inputs">
+                        <label for='minAge'>Минимальный возраст:</label>
+                        <input id='minAge' type='number'>
+                        <label for='maxAge'>Максимальный возраст:</label>
+                        <input id='maxAge' type='number'>
+                    </div>
+                    <div class="filter-form__btn-wrapper">
+                        <button type="submit">Применить фильтр</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+        <footer class="footer">
+            <p>
+                Developed by Daniil Ocheretin 2023
+            </p>
+        </footer>
+    </div>
+    <script src='js/app.js' defer></script>
+</body>
+
+</html>
